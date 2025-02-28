@@ -1,0 +1,30 @@
+{
+  "name": "expense-tracker-cli",
+  "version": "1.0.0",
+  "description": "https://roadmap.sh/projects/expense-tracker",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayyedaaman2/expense-tracker-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sayyedaaman2/expense-tracker-cli/issues"
+  },
+  "homepage": "https://github.com/sayyedaaman2/expense-tracker-cli#readme",
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "commander": "^13.1.0"
+  }
+}
