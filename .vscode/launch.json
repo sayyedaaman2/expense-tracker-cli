@@ -1,0 +1,103 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run ts-node list",
+            "runtimeArgs": [
+                "--loader",
+                "ts-node/esm",
+                "--inspect"
+            ],
+            "program": "${workspaceFolder}/src/index.ts",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "list"
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run ts-node add",
+            "runtimeArgs": [
+                "--loader",
+                "ts-node/esm",
+                "--inspect"
+            ],
+            "program": "${workspaceFolder}/src/index.ts",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "add",
+                "--description", "Lunch",
+                "--amount", "500"
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run ts-node update",
+            "runtimeArgs": [
+                "--loader",
+                "ts-node/esm",
+                "--inspect"
+            ],
+            "program": "${workspaceFolder}/src/index.ts",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "update",
+                "--id", "1",
+                "--description", "Dinner",
+                "--amount", "1500"
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run ts-node delete",
+            "runtimeArgs": [
+                "--loader",
+                "ts-node/esm",
+                "--inspect"
+            ],
+            "program": "${workspaceFolder}/src/index.ts",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "delete",
+                "--id", "1",
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run ts-node summary",
+            "runtimeArgs": [
+                "--loader",
+                "ts-node/esm",
+                "--inspect"
+            ],
+            "program": "${workspaceFolder}/src/index.ts",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "summary",
+                "--month",
+                "2"
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+    ]
+}
