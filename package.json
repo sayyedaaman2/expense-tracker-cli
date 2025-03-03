@@ -9,6 +9,9 @@
     "build": "tsc",
     "start": "node dist/index.js"
   },
+  "bin":{
+    "mycli" : "./dist/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sayyedaaman2/expense-tracker-cli.git"
