@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { FILE_PATH } from '../utils/constants.ts'; // Assuming FILE_PATH is correctly set up
+import { FILE_PATH } from '../utils/constants.js'; // Assuming FILE_PATH is correctly set up
 import { Expense } from '../types.js';
 
 

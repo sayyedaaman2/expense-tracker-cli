@@ -2,9 +2,9 @@ import fs from 'node:fs';
 
 import { Command } from 'commander';
 
-import { addExpense, deleteExpense, listExpense, summaryExpence } from './controllers/expense.controller.ts';
+import { addExpense, deleteExpense, listExpense, summaryExpence } from './controllers/expense.controller.js';
 import { Expense } from './types.js';
-import { FILE_PATH } from './utils/constants.ts';
+import { FILE_PATH } from './utils/constants.js';
 
 if(!fs.existsSync(FILE_PATH)){
     fs.writeFileSync(FILE_PATH,JSON.stringify([]));

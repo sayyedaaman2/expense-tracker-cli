@@ -1,6 +1,5 @@
-import fs from 'node:fs'
 import { Expense } from '../types.js';
-import { readFile, writeFile } from '../utils/fileSystem.ts';
+import { readFile, writeFile } from '../utils/fileSystem.js';
 
 
 export function addExpense({ id, description, amount }: Expense): void {

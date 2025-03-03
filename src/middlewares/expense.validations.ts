@@ -1,4 +1,4 @@
-import { Expense } from "../types.ts";
+import { Expense } from "../types.js";
 
 export function validateExpenseInput(data:Expense,next:any){
     try{
